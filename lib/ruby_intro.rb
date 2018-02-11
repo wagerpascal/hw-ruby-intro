@@ -3,7 +3,6 @@
 # Part 1
 
 def sum(arr)
-  # YOUR CODE HERE
   if arr.empty?
     0
   else
@@ -12,7 +11,6 @@ def sum(arr)
 end
 
 def max_2_sum(arr)
-  # YOUR CODE HERE
   sum = 0
   print arr
   if arr.empty?
@@ -28,7 +26,6 @@ def max_2_sum(arr)
 end
 
 def sum_to_n?(arr, n)
-  # YOUR CODE HERE
   arr.permutation(2) do |i, j|
     if i + j == n 
        return true
@@ -40,16 +37,14 @@ end
 # Part 2
 
 def hello(name)
-  # YOUR CODE HERE
   "Hello, " + name
 end
 
 def starts_with_consonant?(s)
-  # YOUR CODE HERE
   if s.empty? || s =~ /[^[:alpha:]]/
     return false 
-  else #s =~ /^[A-Za-z0-9]+$/
-    #puts s[0]
+  else 
+    
     if s[0] !~ /^(a|e|i|o|u)/i
       return true
     end
@@ -60,7 +55,7 @@ def starts_with_consonant?(s)
 end
 
 def binary_multiple_of_4?(s)
-  # YOUR CODE HERE
+  
   if s.empty? || s =~ /[^01]/
     return false
   elsif s =~ /00$/ || s == '0'
@@ -72,7 +67,7 @@ end
 # Part 3
 
 class BookInStock
-# YOUR CODE HERE
+
   attr_accessor :isbn, :price
   
   def initialize (isbn, price)
