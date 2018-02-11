@@ -12,14 +12,14 @@ end
 
 def max_2_sum(arr)
   sum = 0
-  print arr
+  #print arr
   if arr.empty?
     sum
   elsif arr.count == 1
     sum = arr.first
   else
-    print arr.sort[-1]
-    print arr.sort[-2]
+    #print arr.sort[-1]
+    #print arr.sort[-2]
     sum = arr.sort[-1] + arr.sort[-2]
   end
   
